@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { yekanBakh } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa">
+    <html lang="fa" dir="rtl" className={yekanBakh.variable}>
       <body>{children}</body>
     </html>
   );
